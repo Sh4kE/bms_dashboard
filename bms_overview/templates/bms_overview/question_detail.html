@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>{{ object.question_text }}</h2>
+    <p>Published: {{ object.pub_date|date }}</p>
+    <p>Published: {{ object.pub_date }}</p>
+    <p>Date: {{ now|date }}</p>
+    <p>Date: {{ now }}</p>
+{% endblock %}
